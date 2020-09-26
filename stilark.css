@@ -51,6 +51,7 @@ nav{
     background-color: rgb(226, 226, 226);
     margin: 5px;
     transition: all 0.3s ease;
+    border-radius: 10px;
 }
 
 @media screen and (max-width:1024px){
