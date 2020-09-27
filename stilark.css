@@ -112,7 +112,7 @@ nav{
     transform: rotate(45deg) translate(-5px,-6px); 
 }
 
-.footer {
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
