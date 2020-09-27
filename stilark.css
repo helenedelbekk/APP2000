@@ -131,6 +131,8 @@ footer {
   
   .nominerte   { background-color: #d4e08b; }
   .foresla  { background-color: #48774c; }
+  .foreslatte   { background-color: #d4e08b; }
+  .stemme  { background-color: #48774c; }
   
   .bokser {
     display: grid;
