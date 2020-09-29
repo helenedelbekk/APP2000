@@ -28,7 +28,7 @@ nav{
     align-items: center;
     min-height: 8vh;
     background-color: #202133;
-    
+
 }
 
 .logo{
@@ -90,6 +90,7 @@ nav{
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        z-index: 3;
     }
     .nav-links li{
         opacity: 0;
@@ -168,7 +169,7 @@ footer {
   }
   .form {
     position: relative;
-    z-index: auto;
+    z-index: 1;
     background: #FFFFFF;
     max-width: 360px;
     margin: 0 auto 100px;
