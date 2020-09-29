@@ -1,40 +1,58 @@
 <!DOCTYPE html>
-<html lang"no">
+<html lang="no">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="oblig1.css"/>
-
-
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stilark.css">
+    <title>Vestfold Gruppe 12|Avstemming</title>
 </head>
+
 <body>
+    <nav>
+        <div class="logo">
+            <h4>Gruppe 12</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Hjem</a>
+            </li>
+            <li>
+                <a href="avstemming.html">Avstemming</a>
+            </li>
+            <li>
+                <a href="nominering.html">Nominering</a>
+            </li>
+            <li>
+                <a href="registrering.html">Registrering</a>
+            </li>
+            <li>
+                <a href="login.html">Logg inn</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
 
-<div class="topnav" id="myTopnav">
-  <a href="index.php">Hjem</a>
-  <a href="avstemming.html" class="active">Avstemming</a>
-  <a href="nominering.html">Nominering</a>
-  <a href="registrering.html">Registrering</a>
-  <a href="login.html">Logg inn</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+    <article>
+        <div class='bokser'>
+            <div class='boks nominerte'>
+                <p>Foreslå kandidater</p>
+            </div>
+            <div class='boks stemme'>
+                <p>Avgi stemme</p>
+            </div>
+        </div>
+    </article>
 
-<div style="padding-left:16px">
-  <h2>Responsive Topnav Example</h2>
-  <p>Resize the browser window to see how it works.</p>
-</div>
+    <footer>
+        <p>© Gruppe V-12</p>
+    </footer>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
+    <script src="hamburger.js"></script>
 </body>
+
 </html>
