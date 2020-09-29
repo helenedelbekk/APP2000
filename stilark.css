@@ -16,10 +16,8 @@ body {
     background: -moz-linear-gradient(right, lightgrey, white);
     background: -o-linear-gradient(right, lightgrey, white);
     background: linear-gradient(to left, lightgrey, white);
-    font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin: 0;
   }
 
 nav{
@@ -34,7 +32,7 @@ nav{
 .logo{
     color: #d2d2d6;
     text-transform: uppercase;
-    /*letter-spacing: 5px; */
+    letter-spacing: 3px;
     font-size: 20px;
 }
 .nav-links{
@@ -48,7 +46,6 @@ nav{
 .nav-links a{
     color: #d2d2d6;
     text-decoration: none;
-    /*letter-spacing: 3px; */
     font-weight: bold;
     font-size: 14px;
 }
