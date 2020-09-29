@@ -29,9 +29,10 @@ nav{
 
 }
 
-.logo{
+.logo a {
     color: #d2d2d6;
     text-transform: uppercase;
+    text-decoration: none;
     letter-spacing: 3px;
     font-size: 20px;
 }
