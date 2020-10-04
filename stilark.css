@@ -211,11 +211,11 @@ footer {
   }
   .form .message {
     margin: 15px 0 0;
-    color: grey;
+    color: darkgray;
     font-size: 12px;
   }
   .form .message a {
-    color: grey;
+    color: black;
     text-decoration: none;
   }
   .form .register-form {
@@ -263,7 +263,7 @@ footer {
     box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
     padding: 30px;
   }
-  
+
   .wrapper .title{
     font-size: 24px;
     font-weight: 700;
@@ -272,24 +272,24 @@ footer {
     text-transform: uppercase;
     text-align: center;
   }
-  
+
   .wrapper .reg{
     width: 100%;
   }
-  
+
   .wrapper .reg .inputfield{
     margin-bottom: 15px;
     display: flex;
     align-items: center;
   }
-  
+
   .wrapper .reg .inputfield label{
      width: 200px;
      color: #757575;
      margin-right: 10px;
     font-size: 14px;
   }
-  
+
   .wrapper .reg .inputfield .input,
   .wrapper .reg .inputfield .textarea{
     width: 100%;
@@ -300,19 +300,19 @@ footer {
     border-radius: 3px;
     transition: all 0.3s ease;
   }
-  
+
   .wrapper .reg .inputfield .textarea{
     width: 100%;
     height: 125px;
     resize: none;
   }
-  
+
   .wrapper .reg .inputfield .custom_select{
     position: relative;
     width: 100%;
     height: 37px;
   }
-  
+
   .wrapper .reg .inputfield .custom_select:before{
     content: "";
     position: absolute;
@@ -322,7 +322,7 @@ footer {
     border-color: #d5dbd9 transparent transparent transparent;
     pointer-events: none;
   }
-  
+
   .wrapper .reg .inputfield .custom_select select{
     -webkit-appearance: none;
     -moz-appearance:   none;
@@ -336,14 +336,14 @@ footer {
     border: 1px solid #d5dbd9;
     border-radius: 3px;
   }
-  
-  
+
+
   .wrapper .reg .inputfield .input:focus,
   .wrapper .reg .inputfield .textarea:focus,
   .wrapper .reg .inputfield .custom_select select:focus{
     border: 1px solid #202133;
   }
-  
+
   .wrapper .reg .inputfield p{
      font-size: 14px;
      color: #757575;
@@ -355,11 +355,47 @@ footer {
     display: block;
     cursor: pointer;
   }
-  
+<<<<<<< Updated upstream
+
+=======
+  .wrapper .reg .inputfield .check input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .wrapper .reg .inputfield .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #202133;
+    display: block;
+    position: relative;
+  }
+  .wrapper .reg .inputfield .check .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    display: none;
+  }
+  .wrapper .reg .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+    background: #202133;
+  }
+
+  .wrapper .reg .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+    display: block;
+  }
+
+>>>>>>> Stashed changes
   .wrapper .reg .inputfield .btn{
     width: 100%;
      padding: 8px 10px;
-    font-size: 15px; 
+    font-size: 15px;
     border: 0px;
     background:  #202133;
     color: #fff;
@@ -367,15 +403,15 @@ footer {
     border-radius: 3px;
     outline: none;
   }
-  
+
   .wrapper .reg .inputfield .btn:hover{
     background: #202133;
   }
-  
+
   .wrapper .reg .inputfield:last-child{
     margin-bottom: 0;
   }
-  
+
   @media (max-width:420px) {
     .wrapper .reg .inputfield{
       flex-direction: column;
