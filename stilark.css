@@ -129,7 +129,7 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
 }
-
+/* Footer start */
 footer {
     position: fixed;
     left: 0;
@@ -141,31 +141,8 @@ footer {
     text-align: center;
   }
 
-  .boks {
-    color: black;
-    padding: 1em;
-    text-align: center;
-  }
-
-  .nominerte   { background-color: #d4e08b; }
-  .foresla  { background-color: #48774c; }
-  .foreslatte   { background-color: #d4e08b; }
-  .stemme  { background-color: #48774c; }
-
-  .bokser {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 90vh;
-  }
-
-  @media screen and (max-width: 1024px) {
-    .bokser {
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: 45vh 45vh;
-    }
-  }
-
+/* Footer slutt – Innlogging start */
+  
   .login-page {
     width: 360px;
     padding: 8% 0 0;
@@ -254,7 +231,7 @@ footer {
   .container .info span .fa {
     color: #EF3B3A;
   }
-
+/* Innlogging slutt – Registrering start*/
   .wrapper{
     max-width: 500px;
     width: 100%;
@@ -388,6 +365,9 @@ footer {
       flex-direction: row;
     }
   }
+
+/* Registrering slutt – Bildekarusell start */
+
   img {
     max-width: 100%;
     vertical-align: middle;
@@ -501,3 +481,68 @@ footer {
       max-height: 40vh;
     }
   }
+
+/* Bildekarusell slutt – Grid start */
+
+.boks {
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+.boks img{
+  border-radius: 50%;
+  max-height: 250px;
+}
+.boks h1{
+  font-size: 24px;
+  font-weight: bold;
+  padding: 2vh 0 0 0;
+}
+.boks p{
+  padding: 2vh 0 2vh 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+.boks button{
+  background-color: white; /* Green */
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.boks button:hover{
+  background-color: #e7e7e7;
+}
+
+.en   { background-color: #A2DED0; }
+.to  { background-color: #F4D03F; }
+.tre   { background-color: #6C7A89; }
+.fire { background-color: #59ABE3; }
+
+/* Our Grid Code */
+.app-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 90vh;
+}
+
+/* try to resize the screen */
+@media screen and (max-width: 1024px) {
+  .app-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45vh 45vh;
+  }
+  .boks img{
+    border-radius: 50%;
+    max-height: 150px;
+  }
+}
