@@ -399,7 +399,7 @@ footer {
   
   .slider, .slider-wrapper {
     position: relative;
-    height: 34vh;
+    height: 35vh;
   }
   
   .slide {
@@ -474,29 +474,30 @@ footer {
   }
   @media only screen and (min-width: 1025px) {
     .slider, .slider-wrapper {
-      height: 700px;
-    }
-  
-    .slide-caption {
-      width: 65%;
-      font-size: 1.5rem;
-    }
-  }
-  
-  @media only screen and (max-width: 1024px) and (min-width: 768px) {
-    .slider, .slider-wrapper {
       height: 45vh;
     }
   
     .slide-caption {
-      width: 75%;
-      font-size: 1.25rem;
+      width: 100%;
+      font-size: 1.5rem;
+    }
+    .slide-img {
+      max-width: 500px;
+      height: auto;
     }
   }
   
-  @media only screen and (min-width: 768px) {
-    .slide-img {
+  @media only screen and (max-width: 1024px) {
+    .slider, .slider-wrapper {
+      height: 35vh;
+    }
+  
+    .slide-caption {
       width: 100%;
-      height: auto;
+      font-size: 1.25rem;
+    }
+    .slide-img {
+      width: auto;
+      max-height: 40vh;
     }
   }
