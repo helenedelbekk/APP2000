@@ -527,14 +527,12 @@ footer {
 .tre   { background-color: #6C7A89; }
 .fire { background-color: #59ABE3; }
 
-/* Our Grid Code */
 .app-layout {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 90vh;
 }
 
-/* try to resize the screen */
 @media screen and (max-width: 1024px) {
   .app-layout {
     display: grid;
