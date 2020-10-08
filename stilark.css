@@ -29,6 +29,23 @@ nav{
 
 }
 
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  width: 50%;
+  height: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  top: 200px;
+  width:80%;
+}
+
+
+#stemmebilde {
+  max-width: 100%;
+  height: auto;
+
 .logo a {
     color: #d2d2d6;
     text-transform: uppercase;
@@ -142,7 +159,7 @@ footer {
   }
 
 /* Footer slutt – Innlogging start */
-  
+
   .login-page {
     width: 360px;
     padding: 8% 0 0;
@@ -332,7 +349,7 @@ footer {
     display: block;
     cursor: pointer;
   }
-  
+
   .wrapper .reg .inputfield .btn{
     width: 100%;
      padding: 8px 10px;
@@ -372,16 +389,16 @@ footer {
     max-width: 100%;
     vertical-align: middle;
   }
-  
+
   .trigger {
     display: none;
   }
-  
+
   .slider, .slider-wrapper {
     position: relative;
     height: 35vh;
   }
-  
+
   .slide {
     width: 100%;
     overflow: hidden;
@@ -393,7 +410,7 @@ footer {
     opacity: 0;
     transition: opacity .5s ease-in-out;
   }
-  
+
   .slide-img {
     filter: brightness(100%);
     height: 100%;
@@ -401,37 +418,37 @@ footer {
     display: block;
     margin: 0 auto;
   }
-  
+
   .slide-figure {
     height: 100%;
     position: relative;
     margin: 0;
   }
-  
+
   .slide-caption {
     position: absolute;
     bottom: 5%;
     width: 100%;
     color: rgb(230, 17, 17);
     text-align: center;
-  
+
   }
-  
+
   .trigger:checked + .slide {
     z-index: 6000;
     opacity: 1;
   }
-  
+
   .slider-nav {
     width: 100%;
     text-align: center;
     margin: 1rem 0;
   }
-  
+
   .slider-nav__item {
     display: inline-block;
   }
-  
+
   .slider-nav__label {
     font-size: 13px;
     background-color: red;
@@ -445,7 +462,7 @@ footer {
     cursor: pointer;
     transition: background-color .25s, color .25s ease-in-out;
   }
-  
+
   .slider-nav__label:hover,
   .slider-nav__label:active,
   .slider-nav__label:focus {
@@ -456,7 +473,7 @@ footer {
     .slider, .slider-wrapper {
       height: 45vh;
     }
-  
+
     .slide-caption {
       width: 100%;
       font-size: 1.5rem;
@@ -466,12 +483,12 @@ footer {
       height: auto;
     }
   }
-  
+
   @media only screen and (max-width: 1024px) {
     .slider, .slider-wrapper {
       height: 35vh;
     }
-  
+
     .slide-caption {
       width: 100%;
       font-size: 1.25rem;
