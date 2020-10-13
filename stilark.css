@@ -45,6 +45,7 @@ nav{
 #stemmebilde {
   max-width: 80%;
   height: auto;
+  background-size: contain; 
 
 .logo a {
     color: #d2d2d6;
