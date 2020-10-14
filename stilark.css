@@ -25,7 +25,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #202133;
+    background-color: #151E3F;
 
 }
 
@@ -49,7 +49,7 @@ nav{
 }
 
 .logo a {
-    color: #d2d2d6;
+    color: #F2F3D3;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 3px;
@@ -68,7 +68,7 @@ nav{
     list-style: none;
 }
 .nav-links a{
-    color: #d2d2d6;
+    color: #F2F3D3;
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
@@ -85,7 +85,7 @@ nav{
 .burger div{
     width: 25px;
     height: 3px;
-    background-color: #d2d2d6;
+    background-color: #F2F3D3;
     margin: 5px;
     transition: all 0.3s ease;
     border-radius: 10px;
@@ -105,9 +105,9 @@ nav{
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 90vh;
+        height: 92vh;
         top: 8vh;
-        background-color: #202133;
+        background-color: #151E3F;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -149,19 +149,8 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
 }
-/* Footer start */
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2vh;
-    background-color: #202133;
-    color: #d2d2d6;
-    text-align: center;
-  }
 
-/* Footer slutt – Innlogging start */
+/* Innlogging start */
 
   .login-page {
     width: 360px;
@@ -171,7 +160,7 @@ footer {
   .form {
     position: relative;
     z-index: 1;
-    background: #FFFFFF;
+    background: white;
     max-width: 360px;
     margin: 0 auto 100px;
     padding: 45px;
@@ -193,18 +182,18 @@ footer {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
-    background: grey;
+    background: #DC9E82;
     width: 100%;
     border: 0;
     padding: 15px;
-    color: #FFFFFF;
+    color: #F2F3D9;
     font-size: 14px;
     -webkit-transition: all 0.3 ease;
     transition: all 0.3 ease;
     cursor: pointer;
   }
   .form button:hover,.form button:active,.form button:focus {
-    background: grey;
+    background:#151E3F;
   }
   .form .message {
     margin: 15px 0 0;
@@ -255,7 +244,7 @@ footer {
   .wrapper{
     max-width: 500px;
     width: 100%;
-    background: #fff;
+    background: white;
     margin: 50px auto;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
     padding: 30px;
@@ -265,7 +254,7 @@ footer {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 25px;
-    color: #202133;
+    color: #151E3F;
     text-transform: uppercase;
     text-align: center;
   }
@@ -338,7 +327,7 @@ footer {
   .wrapper .reg .inputfield .input:focus,
   .wrapper .reg .inputfield .textarea:focus,
   .wrapper .reg .inputfield .custom_select select:focus{
-    border: 1px solid #202133;
+    border: 1px solid #C16E70;
   }
 
   .wrapper .reg .inputfield p{
@@ -358,15 +347,15 @@ footer {
      padding: 8px 10px;
     font-size: 15px;
     border: 0px;
-    background:  #202133;
-    color: #fff;
+    background:  #DC9E82;
+    color: #F2F3D9;
     cursor: pointer;
     border-radius: 3px;
     outline: none;
   }
 
   .wrapper .reg .inputfield .btn:hover{
-    background: #202133;
+    background: #151E3F;
   }
 
   .wrapper .reg .inputfield:last-child{
@@ -505,7 +494,7 @@ footer {
 /* Bildekarusell slutt – Grid start */
 
 .boks {
-  color: #fff;
+  color: #ffffff;
   padding: 1em;
   text-align: center;
 }
@@ -526,9 +515,9 @@ footer {
 }
 
 .boks button{
-  background-color: white; /* Green */
+  background-color: #DC9E82;
   border: none;
-  color: black;
+  color: #F2F3D9;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -539,25 +528,25 @@ footer {
   cursor: pointer;
 }
 .boks button:hover{
-  background-color: #e7e7e7;
+  background-color: #151E3F;
 }
 
-.en   { background-color: #A2DED0; }
-.to  { background-color: #F4D03F; }
-.tre   { background-color: #6C7A89; }
-.fire { background-color: #59ABE3; }
+.en   { background-color: #C16E70; }
+.to  { background-color: #F3A712; }
+.tre   { background-color: #E4572E; }
+.fire { background-color: #B7990D; }
 
 .app-layout {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 90vh;
+  grid-template-rows: 92vh;
 }
 
 @media screen and (max-width: 1024px) {
   .app-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 45vh 45vh;
+    grid-template-rows: 46vh 46vh;
   }
   .boks img{
     border-radius: 50%;
