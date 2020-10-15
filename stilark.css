@@ -11,7 +11,7 @@ html{
 }
 
 body {
-    background: lightblue; /* fallback for old browsers */
+    background: lightgrey; /* fallback for old browsers */
     background: -webkit-linear-gradient(right, lightgrey, white);
     background: -moz-linear-gradient(right, lightgrey, white);
     background: -o-linear-gradient(right, lightgrey, white);
@@ -41,7 +41,6 @@ nav{
   width:60%;
 }
 
-<<<<<<< HEAD
 .stemmebilde {
   display: block;
   margin-left: auto;
@@ -49,8 +48,6 @@ nav{
   width: 30%;
 }
 
-=======
->>>>>>> 87bf38cc14180cf5d488054b1c8cc3e44a2cfecd
 .logo a {
     color: #F2F3D3;
     text-transform: uppercase;
