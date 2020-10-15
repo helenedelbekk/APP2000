@@ -41,13 +41,6 @@ nav{
   width:60%;
 }
 
-
-#stemmebilde {
-  max-width: 80%;
-  height: auto;
-  background-size: contain;
-}
-
 .logo a {
     color: #F2F3D3;
     text-transform: uppercase;
