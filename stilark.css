@@ -41,6 +41,7 @@ nav{
   width:60%;
 }
 
+<<<<<<< HEAD
 .stemmebilde {
   display: block;
   margin-left: auto;
@@ -48,6 +49,8 @@ nav{
   width: 30%;
 }
 
+=======
+>>>>>>> 87bf38cc14180cf5d488054b1c8cc3e44a2cfecd
 .logo a {
     color: #F2F3D3;
     text-transform: uppercase;
