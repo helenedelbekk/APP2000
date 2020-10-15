@@ -32,7 +32,7 @@ nav{
 .center {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20%;
+  margin-top: 10%;
   width: 50%;
   height: 50%;
   border: solid 3px #151E3F;
@@ -41,11 +41,11 @@ nav{
   width:60%;
 }
 
-
-#stemmebilde {
-  max-width: 80%;
-  height: auto;
-  background-size: contain;
+.stemmebilde {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
 }
 
 .logo a {
