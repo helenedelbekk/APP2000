@@ -114,7 +114,7 @@ nav{
 }
 
 
-@media screen and (max-width:768px){
+@media screen and ( max-width:768px){
     body{
         overflow-x: hidden;
     }
@@ -377,34 +377,17 @@ nav{
   .wrapper .reg .inputfield:last-child{
     margin-bottom: 0;
   }
-
-  @media (max-width:420px) {
-    .wrapper .reg .inputfield{
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .wrapper .reg .inputfield label{
-      margin-bottom: 5px;
-    }
-    .wrapper .reg .inputfield.terms{
-      flex-direction: row;
-    }
-  }
-
 /* Registrering slutt - Grid start*/
 
 .boks {
   color: #ffffff;
   padding: 0.5em 1em 0.25em 1em;
   text-align: center;
-
-
-
 }
 
 .boks img{
   border-radius: 50%;
-  max-height: 250px;
+  max-height: 150px;
 }
 .boks h1{
   font-size: 24px;
@@ -441,19 +424,19 @@ nav{
 
 .app-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 92vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 46vh 46vh;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .app-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 46vh 46vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 92vh;
   }
   .boks img{
     border-radius: 50%;
-    max-height: 150px;
+    max-height: 250px;
   }
 }
 
@@ -463,9 +446,5 @@ nav{
   list-style-position: inside;
   }
 
-/* Responsive layout - stacker nomineringsgriden oppaa hverandre */
-@media screen and (max-width: 768px) {
-  .column {
-    width: 100%;
-  }
+
 }
