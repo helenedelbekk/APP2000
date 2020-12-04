@@ -7,7 +7,7 @@
 html{
     margin: 0;
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -18,17 +18,125 @@ body {
     background: linear-gradient(to left, lightgrey, white);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
-
+/* Hamburger start */
 nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color: #151E3F;
-
+	align-items: center;
+	background-color: #151E3F;
+	display: flex;
+	justify-content: space-around;
+	min-height: 8vh;
 }
 
+.logo a{
+	color: #F2F3D3;
+	font-size: 20px;
+	letter-spacing: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.logo a:hover{
+	color: white;
+}
+
+.nav-links{
+	align-items: center;
+	background-color: #151E3F;
+	display: flex;
+	flex-direction: column;
+	height: 92vh;
+	justify-content: space-around;
+	position: absolute;
+	right: 0px;
+	top: 8vh;
+	transform: translateX(100%);
+	transition: transform 0.5s ease-in;
+	width: 50%;
+	z-index: 3;
+}
+
+.nav-links a{
+	color: #F2F3D3;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+}
+.nav-links a:hover{
+	color: white;
+}
+
+.nav-links li{
+	list-style: none;
+	opacity: 0;
+}
+
+.burger{
+  cursor: pointer;
+  display: inline-block;
+}
+
+.burger div{
+	background-color: #F2F3D3;
+	border-radius: 10px;
+	height: 3px;
+	margin: 5px;
+	transition: all 0.3s ease;
+	width: 25px;
+}
+
+.nav-active{
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+	opacity: 0;
+}
+
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+@media screen and (min-width: 768px){
+	.nav-links{
+		flex-direction: row;
+		height: 8vh;
+		position: relative;
+		top: 0vh;
+		transform: none;
+		transition: none;
+		width: 60%;
+  }
+  
+	.nav-links li{
+		opacity: 1;
+  }
+  
+	.burger{
+		display: none;
+	}
+}
+@media screen and (min-width: 1024px){
+	.nav-links {
+		width: 35%;
+	}
+}
+/* Hamburger slutt – Index start */
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -61,112 +169,8 @@ nav{
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
-
-
 }
-.logo a {
-    color: #F2F3D3;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-size: 20px;
-}
-
-.logo a:hover{
-  color: white;
-}
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 35%;
-}
-.nav-links li{
-    list-style: none;
-}
-.nav-links a{
-    color: #F2F3D3;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-}
-.nav-links a:hover{
-  color: white;
-}
-
-.burger {
-    display: none;
-    cursor: pointer;
-}
-
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color: #F2F3D3;
-    margin: 5px;
-    transition: all 0.3s ease;
-    border-radius: 10px;
-}
-
-@media screen and (max-width:1024px){
-    .nav-links{
-        width: 60%;
-    }
-}
-
-
-@media screen and ( max-width:768px){
-    body{
-        overflow-x: hidden;
-    }
-    .nav-links{
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: #151E3F;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        z-index: 3;
-    }
-    .nav-links li{
-        opacity: 0;
-    }
-    .burger{
-        display: block;
-    }
-
-}
-
-.nav-active{
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .line2{
-    opacity: 0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
-}
-
-/* Innlogging start */
+/* Index slutt – logg inn start */
 
   .login-page {
     width: 360px;
@@ -446,5 +450,3 @@ nav{
   list-style-position: inside;
   }
 
-
-}
