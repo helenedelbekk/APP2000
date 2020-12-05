@@ -197,7 +197,7 @@ nav{
     padding: 15px;
     box-sizing: border-box;
     font-size: 14px;
-  }
+  } 
   .form button {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
@@ -226,6 +226,12 @@ nav{
   }
   .form .register-form {
     display: none;
+  }
+  .form .title {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 27px;
+
   }
   .container {
     position: relative;
