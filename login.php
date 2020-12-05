@@ -31,7 +31,7 @@
         <form class="login-form">
           <input type="text" placeholder="Brukernavn"/>
           <input type="password" placeholder="Passord"/>
-          <a href="default.html" class="loginbutton">Logg inn</a>
+          <a href="default.php" class="loginbutton">Logg inn</a>
 
 
           <p class="message"> <a href="glemt-passord.php">Glemt passord?</a></p>
