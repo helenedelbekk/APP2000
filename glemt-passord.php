@@ -11,20 +11,20 @@
 <body>
     <nav>
         <div class="logo">
-            <h4><a href="index.html">Gruppe 12</a></h4>
+            <h4><a href="index.php">Gruppe 12</a></h4>
         </div>
         <ul class="nav-links">
             <li>
-                <a href="avstemming.html">Avstemming</a>
+                <a href="avstemming.php">Avstemming</a>
             </li>
             <li>
-                <a href="nominering.html">Nominering</a>
+                <a href="nominering.php">Nominering</a>
             </li>
             <li>
-                <a href="registrering.html">Registrering</a>
+                <a href="registrering.php">Registrering</a>
             </li>
             <li>
-                <a href="index.html">Logg ut</a>
+                <a href="index.php">Logg ut</a>
             </li>
         </ul>
         <div class="burger">
@@ -42,7 +42,7 @@
                  Glemt passord
             </div>
           <input type="text" placeholder="E-postadresse"/>
-          <a href="login.html" class="loginbutton">Send</a>
+          <a href="login.php" class="loginbutton">Send</a>
 
         </form>
       </section>

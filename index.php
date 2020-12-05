@@ -11,11 +11,11 @@
 
   <nav>
     <div class="logo">
-        <h4><a href="index.html">Gruppe 12</a></h4>
+        <h4><a href="index.php">Gruppe 12</a></h4>
     </div>
     <ul class="nav-links">
         <li>
-            <a href="login.html">Logg inn</a>
+            <a href="login.php">Logg inn</a>
         </li>
     </ul>
     <div class="burger">
