@@ -11,20 +11,11 @@
 
   <nav>
     <div class="logo">
-        <h4><a href="default.html">Gruppe 12</a></h4>
+        <h4><a href="index.html">Gruppe 12</a></h4>
     </div>
     <ul class="nav-links">
         <li>
-            <a href="avstemming.html">Avstemming</a>
-        </li>
-        <li>
-            <a href="nominering.html">Nominering</a>
-        </li>
-        <li>
-            <a href="registrering.html">Registrering</a>
-        </li>
-        <li>
-            <a href="index.html">Logg ut</a>
+            <a href="login.html">Logg inn</a>
         </li>
     </ul>
     <div class="burger">
@@ -39,7 +30,7 @@
   <h2> Stemmeapplikasjon </h2>
     <p>Et valg er en måte å demokratisk velge en/flere til politiske verv. <br>
       I denne applikasjonen kan man nominere kandidater og registrere stemmer på de alledere registrerte kandidatene. </p>
-      <img class="stemmebilde" src="bilder/vote_giphy.gif">
+      <img class="stemmebilde" src="vote_giphy.gif">
     </main>
 
   <script src="hamburger.js"></script>

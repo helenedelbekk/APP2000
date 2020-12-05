@@ -37,7 +37,7 @@
     <article>
       <div class='app-layout'>
         <div class='boks en'>
-          <img src="bilder/bilde1.jpg">
+          <img src="bilde1.jpg">
           <h1>Kandidat 1</h1>
           <p>
             Stemmer dere på meg som leder til elevrådet, lover jeg en
@@ -46,7 +46,7 @@
           <button>Stem på Kandidat 1</button>
         </div>
         <div class='boks to'>
-          <img src="bilder/bilde1.jpg">
+          <img src="bilde1.jpg">
           <h1>Kandidat 2</h1>
           <p>
             Hvis dere stemmer meg frem som elevrådsleder jobber jeg for et bedre sammhold
@@ -56,7 +56,7 @@
           <button>Stem på Kandidat 2</button>
         </div>
         <div class='boks tre'>
-          <img src="bilder/bilde1.jpg">
+          <img src="bilde1.jpg">
           <h1>Kandidat 3</h1>
           <p>
             Hvis jeg blir deres nye elevrådsleder skal jeg sørge for at skoledagen blir 
@@ -67,7 +67,7 @@
           <button>Stem på Kandidat 3</button>
         </div>
         <div class='boks fire'>
-          <img src="bilder/bilde1.jpg">
+          <img src="bilde1.jpg">
           <h1>Kandidat 4</h1>
           <p>
           Stemmer dere på meg som elevrådsleder skal jeg egentlig ikke gjøre så mye.
