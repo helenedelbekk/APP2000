@@ -20,7 +20,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
   }
-/* Hamburger start */
+/* Hamburger og nav start */
 nav{
 	align-items: center;
 	background-color: #151E3F;
@@ -136,7 +136,7 @@ nav{
 		width: 35%;
 	}
 }
-/* Hamburger slutt – Index start */
+/* Hamburger og nav slutt – Index og default start */
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -170,7 +170,7 @@ nav{
   transition: all 0.3 ease;
   cursor: pointer;
 }
-/* Index slutt – logg inn start */
+/* Index og default slutt – logg inn start */
 
   .login-page {
     width: 360px;
