@@ -1,0 +1,457 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: lightgrey; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, lightgrey, white);
+    background: -moz-linear-gradient(right, lightgrey, white);
+    background: -o-linear-gradient(right, lightgrey, white);
+    background: linear-gradient(to left, lightgrey, white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+/* Hamburger start */
+nav{
+	align-items: center;
+	background-color: #151E3F;
+	display: flex;
+	justify-content: space-around;
+	min-height: 8vh;
+}
+
+.logo a{
+	color: #F2F3D3;
+	font-size: 20px;
+	letter-spacing: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.logo a:hover{
+	color: white;
+}
+
+.nav-links{
+	align-items: center;
+	background-color: #151E3F;
+	display: flex;
+	flex-direction: column;
+	height: 92vh;
+	justify-content: space-around;
+	position: absolute;
+	right: 0px;
+	top: 8vh;
+	transform: translateX(100%);
+	transition: transform 0.5s ease-in;
+	width: 50%;
+	z-index: 3;
+}
+
+.nav-links a{
+	color: #F2F3D3;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+}
+.nav-links a:hover{
+	color: white;
+}
+
+.nav-links li{
+	list-style: none;
+	opacity: 0;
+}
+
+.burger{
+  cursor: pointer;
+  display: inline-block;
+}
+
+.burger div{
+	background-color: #F2F3D3;
+	border-radius: 10px;
+	height: 3px;
+	margin: 5px;
+	transition: all 0.3s ease;
+	width: 25px;
+}
+
+.nav-active{
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+	opacity: 0;
+}
+
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+@media screen and (min-width: 768px){
+	.nav-links{
+		flex-direction: row;
+		height: 8vh;
+		position: relative;
+		top: 0vh;
+		transform: none;
+		transition: none;
+		width: 60%;
+  }
+
+	.nav-links li{
+		opacity: 1;
+  }
+
+	.burger{
+		display: none;
+	}
+}
+@media screen and (min-width: 1024px){
+	.nav-links {
+		width: 35%;
+	}
+}
+/* Hamburger slutt â€“ Index start */
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  width: 50%;
+  height: 50%;
+  border: solid 3px #151E3F;
+  padding: 10px;
+  top: 200px;
+  width:60%;
+}
+
+.stemmebilde {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.loginbutton{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #DC9E82;
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  color: #F2F3D9;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+/* Index slutt â€“ logg inn start */
+
+  .login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+  }
+  .form {
+    position: relative;
+    z-index: 1;
+    background: white;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #DC9E82;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #F2F3D9;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form button:hover,.form button:active,.form button:focus {
+    background:#151E3F;
+  }
+  .form .message {
+    margin: 15px 0 0;
+    color: darkgray;
+    font-size: 12px;
+  }
+  .form .message a {
+    color: black;
+    text-decoration: none;
+  }
+  .form .register-form {
+    display: none;
+  }
+  .form .title {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 27px;
+
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .container:before, .container:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .container .info {
+    margin: 50px auto;
+    text-align: center;
+  }
+  .container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+  }
+  .container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+  }
+  .container .info span a {
+    color: #000000;
+    text-decoration: none;
+  }
+  .container .info span .fa {
+    color: #EF3B3A;
+  }
+/* Innlogging slutt â€“ Registrering start*/
+  .wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    margin: 50px auto;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+    padding: 30px;
+
+  }
+
+  .wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #151E3F;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .wrapper .reg{
+    width: 100%;
+  }
+
+  .wrapper .reg .inputfield{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .wrapper .reg .inputfield label{
+     width: 200px;
+     color: #757575;
+     margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .wrapper .reg .inputfield .input,
+  .wrapper .reg .inputfield .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+  .wrapper .reg .inputfield .textarea{
+    width: 100%;
+    height: 125px;
+    resize: none;
+  }
+
+  .wrapper .reg .inputfield .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+  }
+
+  .wrapper .reg .inputfield .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+  }
+
+  .wrapper .reg .inputfield .custom_select select{
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+  }
+
+
+  .wrapper .reg .inputfield .input:focus,
+  .wrapper .reg .inputfield .textarea:focus,
+  .wrapper .reg .inputfield .custom_select select:focus{
+    border: 1px solid #C16E70;
+  }
+
+  .wrapper .reg .inputfield p{
+     font-size: 14px;
+     color: #757575;
+  }
+  .wrapper .reg .inputfield .check{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+
+  .wrapper .reg .inputfield .btn{
+    width: 100%;
+     padding: 8px 10px;
+    font-size: 15px;
+    border: 0px;
+    background:  #DC9E82;
+    color: #F2F3D9;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .wrapper .reg .inputfield .btn:hover{
+    background: #151E3F;
+  }
+
+  .wrapper .reg .inputfield:last-child{
+    margin-bottom: 0;
+  }
+/* Registrering slutt - Grid start*/
+
+.boks {
+  color: #ffffff;
+  padding: 0.5em 1em 0.25em 1em;
+  text-align: center;
+}
+
+.boks img{
+  border-radius: 50%;
+  max-height: 150px;
+}
+.boks h1{
+  font-size: 24px;
+  font-weight: bold;
+  padding: 1vh 0 0 0;
+}
+.boks p{
+  padding: 1vh 0 1vh 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+.boks button{
+  background-color: #DC9E82;
+  border: none;
+  color: #F2F3D9;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.boks button:hover{
+  background-color: #151E3F;
+}
+
+.en   { background-color: #C16E70; }
+.to  { background-color: #F3A712; }
+.tre   { background-color: #E4572E; }
+.fire { background-color: #B7990D; }
+
+.app-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 46vh 46vh;
+}
+
+@media screen and (min-width: 1024px) {
+  .app-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 92vh;
+  }
+  .boks img{
+    border-radius: 50%;
+    max-height: 250px;
+  }
+}
+
+.column1 {
+  text-align:center;
+  list-style-type: none;
+  list-style-position: inside;
+  }
