@@ -1,25 +1,8 @@
-// Todo
-// 1. Fix close all subNavs
-
-
 function navToggleClickEventHandler(event) {
     toggleMainNav(this);
   }
   
-  function navToggleKeydownHandler(event) {
-    const toggleButton = event.target;
-  
-    switch (event.key) {
-      // Actual button, so Spacebar is captured already...
-  
-      case "Esc":
-      case "Escape":
-        closeMainNav(toggleButton);
-        break;
-      default:
-        return;
-    }
-  }
+
   
   function subNavClickEventHandler(event) {
     const subNav = this.parentNode.querySelector('.subnav');
@@ -44,20 +27,6 @@ function navToggleClickEventHandler(event) {
     
     console.log(subNav);
     console.log(currentNavItem);
-  
-    switch (event.key) {
-      case "Spacebar":
-      case " ":
-        // Open subnav and jump to first item
-        toggleSubNav(currentNavItem, subNav);
-        break;
-      case "Esc":
-      case "Escape":
-        closeSubNav(currentNavItem, subNav);
-        break;
-      default:
-        return;
-    }
   }
   
   function closeMainNav(button) {
@@ -80,52 +49,21 @@ function navToggleClickEventHandler(event) {
     }
   }
   
-  function closeSubNav(link, subNav) {
-    link.setAttribute('aria-expanded', 'false');
-    subNav.setAttribute('aria-hidden', 'true');
-    subNav.classList.add('noshow');
-  }
   
-  function openSubNav(link, subNav) {
-    link.setAttribute('aria-expanded', 'true');
-    subNav.setAttribute('aria-hidden', 'false');
-    subNav.classList.remove('noshow');
-  }
+
   
   function toggleSubNav(link, subNav) {
-    // Close all subnavs
-    // WIP
     const subNavs = [
-      ...document.querySelectorAll('.nav-main .subnav')
+      ...document.querySelectorAll('.hoved-nav .subnav')
     ];
-    // subNavs.forEach(siblingSubNav => {
-    //   let siblingLink = siblingSubNav.parentNode.querySelector('a');
-    //   closeSubNav(siblingLink, siblingSubNav);
-    // });
+    subNavs.forEach(siblingSubNav => {
+    let siblingLink = siblingSubNav.parentNode.querySelector('a');
+    closeSubNav(siblingLink, siblingSubNav);
+    });
   
-    // Now open the proper subnav
-    if (subNav !== null) {
-      if (link.getAttribute('aria-expanded') === 'true') {
-        closeSubNav(link, subNav);
-      } else {
-        openSubNav(link, subNav);
-      }
-    }
+
   }
-  
-  function setupSubNavItem(subNavItem) {
-    let link = subNavItem.querySelector('a');
-    let subNav = subNavItem.querySelector('.subnav');
-  
-    link.setAttribute('aria-expanded', 'false');
-    link.setAttribute('role', 'button');
-    subNav.removeAttribute('hidden');
-    subNav.setAttribute('aria-hidden', 'true');
-    subNav.classList.add('noshow');
-    // subNav.setAttribute('aria-label', link.innerText + " submenu");
-    // subNav.setAttribute('tabindex', '-1');
-  }
-  
+
   function setupNavLink(navLink) {
     navLink.addEventListener('click', subNavClickEventHandler);
     navLink.parentNode.addEventListener('keydown', subNavKeydownHandler);
@@ -145,18 +83,13 @@ function navToggleClickEventHandler(event) {
   
   
   // Do Main Magic...
-  const header = document.querySelector('.a11y-nav');
-  header.classList.add('has-js-loaded');
-  const mainNav = document.querySelector('.nav-main');
-  const navWrapper = document.querySelector('.nav-wrapper');
-  
-  let subNavItems = [
-    ...document.querySelectorAll('.has-subnav')
-  ];
-  subNavItems.forEach(subNavItem => setupSubNavItem(subNavItem));
+  const header = document.querySelector('.jalla-nav');
+  header.classList.add('bruker-js');
+  const mainNav = document.querySelector('.hoved-nav');
+  const navWrapper = document.querySelector('.nav-burger');
   
   let navLinks = [
-    ...document.querySelectorAll('.nav-main > ul > li > a')
+    ...document.querySelectorAll('.hoved-nav > ul > li > a')
   ];
   navLinks.forEach(navLink => setupNavLink(navLink));
   
