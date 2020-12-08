@@ -19,7 +19,7 @@ body {
 /* hamburger og nav start*/
 header {
   position: relative;
-  background: #252525;
+  background: #151E3F;
   color: #fff;
   display: flex;
   align-items: stretch;
@@ -149,7 +149,7 @@ header {
     left: auto;
     right: auto;
     top: auto;
-    background: #252525;
+    background: #151E3F;
   }
   .hoved-nav > ul {
     margin-left: 1rem;
