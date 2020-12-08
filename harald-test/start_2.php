@@ -2,9 +2,8 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 <link rel="stylesheet" href="stilark.css">
 
-
 <header class="jalla-nav">
-    <div class="logo"><a href="#">Valgapplikasjon</a></div>
+    <div class="logo"><a href="index.php">Valgapplikasjon</a></div>
       <button
            id="nav-main-toggle"
            class="nav-toggle">

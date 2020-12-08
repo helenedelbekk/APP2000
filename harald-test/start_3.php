@@ -1,16 +1,13 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 <link rel="stylesheet" href="stilark.css">
-  <nav>
-    <div class="logo">
-        <h4><a href="index.php">Gruppe 12</a></h4>
-    </div>
-    <ul class="nav-links">
-        <li>
-
-        </li>
-    </ul>
-    <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
-</nav>
+<header class="jalla-nav">
+    <div class="logo"><a href="index.php">Valgapplikasjon</a></div>
+      <button
+           id="nav-main-toggle"
+           class="nav-toggle">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+          <span>Meny</span>
+        </button>
+</header>
