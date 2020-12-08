@@ -1,180 +1,142 @@
 *{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 body {
-  background: lightgrey; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, lightgrey, white);
-  background: -moz-linear-gradient(right, lightgrey, white);
-  background: -o-linear-gradient(right, lightgrey, white);
-  background: linear-gradient(to left, lightgrey, white);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-}
-
-/* hamburger og nav start*/
-header {
-  position: relative;
-  background: #252525;
-  color: #fff;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-}
-
-.logo {
-  margin: 0;
-}
-
-.logo a {
-  display: block;
-  padding: 0 1rem;
-  font-size: 1rem;
-  line-height: 3.250rem;
-  color: #fff;
-  text-decoration: none;
-}
-
-.bruker-js .nav-toggle {
-  display: block;
-}
-
-.bruker-js .nav-burger.noshow {
-  display: none;
-}
-
-.nav-toggle {
-  display: none;
-  order: 1;
-  margin-left: auto;
-  padding: 0.2rem 1rem 0.3rem;
-  height: 3.25rem;
-  border: 0;
-  border-top: 0.25rem solid transparent;
-  background: none;
-  color: #fff;
-  font-family: 'Roboto';
-  font-weight: 500;
-  line-height: 1rem;
-  transition: border-top-color 250ms ease-out;
-  outline: none;
-}
-
-.nav-toggle .fa-times {
-  display: none;
-}
-
-.nav-toggle[aria-expanded="true"] {
-  background: #fff;
-  border-top-color: #e00;
-  color: #252525;
-}
-
-.nav-toggle[aria-expanded="true"] .fa-times {
-  display: block;
-}
-
-.nav-toggle[aria-expanded="true"] .fa-bars {
-  display: none;
-}
-
-.nav-toggle span {
-  display: block;
-  margin: 0.25em 0 0 0;
-  font-size: 0.875em;
-}
-
-.nav-toggle:hover {
-  border-top-color: #06c;
-}
-
-.nav-toggle:active {
-  border-top-color: #e00;
-}
-@media screen and (min-width: 768px) {
-  .nav-toggle {
-    display: none;
+    background: lightgrey; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, lightgrey, white);
+    background: -moz-linear-gradient(right, lightgrey, white);
+    background: -o-linear-gradient(right, lightgrey, white);
+    background: linear-gradient(to left, lightgrey, white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
+/* Hamburger start */
+nav{
+	align-items: center;
+	background-color: #151E3F;
+	display: flex;
+	justify-content: space-around;
+	min-height: 8vh;
 }
 
-.hoved-nav {
-  position: absolute;
-  top: 3.250rem;
-  left: 0;
-  right: 0;
-  background: blanchedalmond;
+.logo a{
+	color: #F2F3D3;
+	font-size: 20px;
+	letter-spacing: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
-.hoved-nav > ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
+.logo a:hover{
+	color: white;
 }
 
-.hoved-nav > ul > li {
-  margin: 1;
+.nav-links{
+	align-items: center;
+	background-color: #151E3F;
+	display: flex;
+	flex-direction: column;
+	height: 92vh;
+	justify-content: space-around;
+	position: absolute;
+	right: 0px;
+	top: 8vh;
+	transform: translateX(100%);
+	transition: transform 0.5s ease-in;
+	width: 50%;
+	z-index: 3;
 }
 
-.hoved-nav > ul > li > a {
-  display: block;
-  padding: 1rem;
-  color: #06c;
-  font-size: 1.5rem;
-  line-height: 1em;
-  text-decoration: none;
+.nav-links a{
+	color: #F2F3D3;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+}
+.nav-links a:hover{
+	color: white;
 }
 
-.hoved-nav > ul > li > a:hover, .hoved-nav > ul > li > a:focus {
-  color: #004080;
+.nav-links li{
+	list-style: none;
+	opacity: 0;
 }
 
-@media screen and (min-width: 768px) {
-  header {
-    align-items: baseline;
-  }
-  header.bruker-js .nav-toggle {
-    display: none;
-  }
-  header.bruker-js .nav-burger.noshow {
-    display: block;
-  }
-  .hoved-nav {
-    position: static;
-    left: auto;
-    right: auto;
-    top: auto;
-    background: #252525;
-  }
-  .hoved-nav > ul {
-    margin-left: 1rem;
-    flex-direction: row;
-  }
-  .hoved-nav > ul > li > a {
-    position: relative;
-    color: #fff;
-    padding: 0 1rem 0.25rem;
-    border-top: 0.25rem solid transparent;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 3.250rem;
-    transition: border-top-color 250ms ease-out;
-  }
-  .hoved-nav > ul > li > a:hover, .hoved-nav > ul > li > a:focus {
-    color: #fff;
-    border-top-color: #06c;
-  }
-  .hoved-nav > ul > li > a:active {
-    border-top-color: #e00;
-  }
+.burger{
+  cursor: pointer;
+  display: inline-block;
 }
 
-/* Hamburger og nav slutt – Index og default start */
+.burger div{
+	background-color: #F2F3D3;
+	border-radius: 10px;
+	height: 3px;
+	margin: 5px;
+	transition: all 0.3s ease;
+	width: 25px;
+}
+
+.nav-active{
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+	opacity: 0;
+}
+
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+@media screen and (min-width: 768px){
+	.nav-links{
+		flex-direction: row;
+		height: 8vh;
+		position: relative;
+		top: 0vh;
+		transform: none;
+		transition: none;
+		width: 60%;
+  }
+
+	.nav-links li{
+		opacity: 1;
+  }
+
+	.burger{
+		display: none;
+	}
+}
+@media screen and (min-width: 1024px){
+	.nav-links {
+		width: 35%;
+	}
+}
+/* Hamburger slutt â€“ Index start */
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -208,7 +170,7 @@ header {
   transition: all 0.3 ease;
   cursor: pointer;
 }
-/* Index og default slutt – logg inn start */
+/* Index slutt â€“ logg inn start */
 
   .login-page {
     width: 360px;
@@ -235,7 +197,7 @@ header {
     padding: 15px;
     box-sizing: border-box;
     font-size: 14px;
-  } 
+  }
   .form button {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
@@ -304,7 +266,7 @@ header {
   .container .info span .fa {
     color: #EF3B3A;
   }
-/* Innlogging slutt – Registrering start*/
+/* Innlogging slutt â€“ Registrering start*/
   .wrapper{
     max-width: 500px;
     width: 100%;
