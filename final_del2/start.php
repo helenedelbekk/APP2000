@@ -32,6 +32,9 @@ if (!$innloggetBruker)  /* bruker er ikke innlogget */
             <a href="registrering.php">Registrering</a>
         </li>
         <li>
+            <a href="bytt_pw.php">Bytt passord</a>
+        </li>
+        <li>
 
             <a href="utlogging.php">Logg ut</a>
         </li>
