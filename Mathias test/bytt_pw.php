@@ -34,7 +34,7 @@ include 'start.php';
                 <input type="password" class="input">
             </div>
             <div class="inputfield">
-                <input type="submit" value="Bekfreft" class="btn">
+                <input type="submit" value="Bekreft" class="btn">
             </div>
         </div>
     </div>
