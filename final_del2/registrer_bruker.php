@@ -13,8 +13,9 @@ include 'start_3.php';
 
 <body>
 
-<h3>Registrer bruker </h3>
-
+<article class="bruker-page">
+ <section class="form">
+   <h3>Registrer bruker </h3> <br>
 <form action="" id="registrerBrukerSkjema" name="registrerBrukerSkjema" method="post">
   Epost <input name="epost" type="text" id="epost" required> <br />
   Passord <input type="password" name="passord" type="text" id="passord" required>  <br />
@@ -70,6 +71,9 @@ document.forms['registrerBrukerSkjema'].elements['epost'].focus();
         }
     }
 ?>
+
+</section>
+</article>
 </body>
 
 </html>

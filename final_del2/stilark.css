@@ -143,7 +143,7 @@ nav{
   margin-top: 10%;
   width: 50%;
   height: 50%;
-  border: solid 3px #151E3F;
+  border: 3px #151E3F;
   padding: 10px;
   top: 200px;
   width:60%;
@@ -157,25 +157,18 @@ nav{
 }
 
 .loginbutton{
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background: #DC9E82;
-  width: 100%;
-  border: 0;
-  padding: 10px;
-  color: #F2F3D9;
-  font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
 }
 /* Index slutt â€“ logg inn start */
 
-  .login-page {
+
+  .login-page .bruker-page {
     width: 360px;
     padding: 8% 0 0;
     margin: auto;
+
   }
   .form {
     position: relative;
