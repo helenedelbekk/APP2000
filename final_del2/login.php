@@ -15,8 +15,11 @@ include ("start_3.php");
 <article class="login-page">
  <section class="form">
 <form id="login-form" name="login-form" method="post">
+   <label for="epost">Fyll inn epost</label>
   Epost <input type="text" name="epost" type="text" id="epost"> <br />
+   <label for="passord">Fyll inn passord</label>
   Passord <input type="password" name="passord" id="passord">  <br/>
+   <label for="male">Velg brukertype</label>
   Brukertype
   <select class="brukertype" name="brukertype">
     <option value="1">Bruker</option>
