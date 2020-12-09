@@ -31,7 +31,7 @@ include 'start.php';
           <button>Stem</button>
         </div>
         <div class='boks tre'>
-          <img src="Anita.jpg">
+          <img src="anita.jpg">
           <h1>Anita</h1>
           <p>
             Hvis jeg blir deres nye elevrådsleder skal jeg sørge for at skoledagen blir
