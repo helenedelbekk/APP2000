@@ -12,4 +12,10 @@ $conn= mysqli_connect($host,$username,$password,$database);
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
+
+/*
+Denne siden er utviklet av Helene Delbekk, sist oppdatert av Helene Delbekk den 06.12.2020.
+Kontrollert sist av Johs Hildebrand den 06.12.2020.
+*/
+
 ?>

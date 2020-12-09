@@ -39,5 +39,9 @@ function sjekkEpostPassordBrukertype($epost,$passord,$brukertype)
     }
   return $lovligBruker;
 }
-
+/* redirigering tilbake til innloggings-siden (innlogging.php) */
+/*
+Denne siden er utviklet av Helene Delbekk, sist oppdatert av Helene Delbekk den 08.12.2020.
+Kontrollert sist av Johs Hildebrand den 09.12.2020.
+*/
 ?>

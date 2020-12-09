@@ -24,4 +24,11 @@ include ("start.php");
 
   <script src="hamburger.js"></script>
 </body>
+
+/*
+Denne siden er utviklet av Helene Delbekk, sist oppdatert av Helene Delbekk den 08.12.2020.
+Kontrollert sist av Harald Evensen den 08.12.2020.
+*/
+
+
 </html>

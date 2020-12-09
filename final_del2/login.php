@@ -72,4 +72,9 @@ Ny bruker? <br>
 </article>
 </body>
 
+/*
+Denne siden er utviklet av Helene Delbekk, sist oppdatert av Helene Delbekk den 06.12.2020.
+Kontrollert sist av Harald Evensen den 06.12.2020.
+*/
+
 </html>

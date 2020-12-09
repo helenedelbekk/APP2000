@@ -6,7 +6,7 @@ const navSlide = ()=>{
     burger.addEventListener('click', ()=>{
         //Toggle Nav
         nav.classList.toggle('nav-active')
-    
+
         //Animasjon av linker
         navLinks.forEach((link, index) => {
             if(link.style.animation){
@@ -23,3 +23,6 @@ const navSlide = ()=>{
 }
 
 navSlide();
+
+// Denne siden er utviklet av Harald Evensen, sist oppdatert av Harald Evensen den 18.10.2020.
+//Kontrollert sist av Johs den 07.12.2020.

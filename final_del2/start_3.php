@@ -9,3 +9,8 @@
         </li>
     </ul>
 </nav>
+
+/*
+Denne siden er utviklet av Harald Evensen, sist oppdatert av Helene Delbekk den 07.12.2020.
+Kontrollert sist av Mathias Blokkhus den 09.12.2020.
+*/

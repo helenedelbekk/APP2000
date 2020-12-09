@@ -57,5 +57,9 @@ include 'start.php';
 
     <script src="hamburger.js"></script>
 </body>
+/*
+Denne siden er utviklet av Harald Evensen, sist oppdatert av Harald Evensen den 10.11.2020.
+Kontrollert sist av Mathias Blokkhus den 02.12.2020.
+*/
 
 </html>

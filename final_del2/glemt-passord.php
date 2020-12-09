@@ -32,5 +32,10 @@ include("start_2.php");
 
     <script src="hamburger.js"></script>
 </body>
+/*
+Denne siden er utviklet av Johs Hildebrand, sist oppdatert av Johs Hildebrand den 08.12.2020.
+Kontrollert sist av Mathias Blokkhus den 08.12.2020.
+*/
+
 
 </html>
