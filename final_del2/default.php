@@ -1,7 +1,6 @@
 <?php
-include ("start_2.php");
+include ("start.php");
 ?>
-
 <!DOCTYPE html>
 <html lang="no">
 <head>
@@ -12,6 +11,8 @@ include ("start_2.php");
     <title>Vestfold Gruppe 12|Hjem</title>
 </head>
 <body>
+
+
 
 
 <main class="center" style="text-align: center;">
