@@ -1,6 +1,17 @@
 <?php
-include("start_3.php");
+include ("start_3.php");
  ?>
+ <!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stilark.css">
+    <title>Vestfold Gruppe 12|Logg inn</title>
+</head>
+
+<body>
 <article class="login-page">
  <section class="form">
 <form id="login-form" name="login-form" method="post">
@@ -57,3 +68,6 @@ Ny bruker? <br>
 
 </section>
 </article>
+</body>
+
+</html>

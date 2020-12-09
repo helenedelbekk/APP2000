@@ -1,3 +1,7 @@
+<?php
+include ("start_2.php");
+?>
+
 <!DOCTYPE html>
 <html lang="no">
 <head>
@@ -8,22 +12,6 @@
     <title>Vestfold Gruppe 12|Hjem</title>
 </head>
 <body>
-
-  <nav>
-    <div class="logo">
-        <h4><a href="index.php">Gruppe 12</a></h4>
-    </div>
-    <ul class="nav-links">
-        <li>
-            <a href="login.php">Logg inn</a>
-        </li>
-    </ul>
-    <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
-</nav>
 
 
 <main class="center" style="text-align: center;">
