@@ -1,6 +1,7 @@
 <?php
 include 'start.php';
  ?>
+
 <!DOCTYPE html>
 <html lang="no">
 <head>
@@ -40,7 +41,13 @@ include 'start.php';
     </div>
 
 
+
+
+
     <script src="hamburger.js"></script>
 </body>
-
+/*
+Denne siden er utviklet av Mathias Blokkhus, sist oppdatert av Mathias Blokkhus den 09.12.2020.
+Kontrollert sist av Helene Delbekk den 09.12.2020.
+*/
 </html>

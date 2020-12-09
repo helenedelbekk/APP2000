@@ -1,4 +1,4 @@
-<?php 
+<?php
 include 'start.php';
  ?>
 <!DOCTYPE html>
@@ -14,43 +14,38 @@ include 'start.php';
     <article>
       <div class='app-layout'>
         <div class='boks en'>
-          <img src="bilde1.jpg">
-          <h1>Kandidat 1</h1>
+          <img src="Tam.jpg">
+          <h1>Tam</h1>
           <p>
-            Stemmer dere på meg som leder til elevrådet, lover jeg en
-            endring i timeplaner samt en nyere og freshere kantine med bedre tilbud
+            Stemmer dere på meg, lover jeg en endring i timeplaner samt en nyere og freshere kantine med bedre tilbud
           </p>
-          <button>Stem på Kandidat 1</button>
+          <button>Stem</button>
         </div>
         <div class='boks to'>
-          <img src="bilde1.jpg">
-          <h1>Kandidat 2</h1>
+          <img src="David.jpg">
+          <h1>David</h1>
           <p>
-            Hvis dere stemmer meg frem som elevrådsleder jobber jeg for et bedre sammhold
-            og mye mere frihet når det kommer til lekser og prøver.
-
+            Hvis dere stemmer på meg skal jeg jobbe for et bedre sammhold
+            og mer frihet når det kommer til lekser og prøver.
           </p>
-          <button>Stem på Kandidat 2</button>
+          <button>Stem</button>
         </div>
         <div class='boks tre'>
-          <img src="bilde1.jpg">
-          <h1>Kandidat 3</h1>
+          <img src="Anita.jpg">
+          <h1>Anita</h1>
           <p>
             Hvis jeg blir deres nye elevrådsleder skal jeg sørge for at skoledagen blir
-            flyttet 1 time fremover slik at vi starter klokken 9 og ikke 8. Det er forsket
-            på at elever er mye mere arbeidsvillige mellom klokken 9-17 enn 8-16
-
+            flyttet 1 time fremover slik at vi starter klokken 9 og ikke 8.
           </p>
-          <button>Stem på Kandidat 3</button>
+          <button>Stem</button>
         </div>
         <div class='boks fire'>
           <img src="bilde1.jpg">
-          <h1>Kandidat 4</h1>
+          <h1>Ola</h1>
           <p>
-          Stemmer dere på meg som elevrådsleder skal jeg egentlig ikke gjøre så mye.
-          Jeg liker bare å ha makt. Rock on everybody og stem på meg!!!
+          Stemmer dere på meg vil jeg jobber for lengere åpningstider på biblioteket og oppgradering av grupperom.
           </p>
-          <button>Stem på Kandidat 4</button>
+          <button>Stem</button>
         </div>
       </div>
     </article>
@@ -58,5 +53,8 @@ include 'start.php';
 
     <script src="hamburger.js"></script>
 </body>
-
+/*
+Denne siden er utviklet av Mathias Blokkhus, sist oppdatert av Helene Delbekk den 09.12.2020.
+Kontrollert sist av Helene Delbekk den 09.12.2020.
+*/
 </html>

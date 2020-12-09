@@ -48,3 +48,8 @@ if (!$innloggetBruker)  /* bruker er ikke innlogget */
         <div class="line3"></div>
     </div>
 </nav>
+
+/*
+Denne siden er utviklet av Helene Delbekk, sist oppdatert av Helene Delbekk den 07.12.2020.
+Kontrollert sist av Harald Evensen den 09.12.2020.
+*/

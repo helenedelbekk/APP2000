@@ -8,9 +8,9 @@
 
         </li>
     </ul>
-    <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
 </nav>
+
+/*
+Denne siden er utviklet av Harald Evensen, sist oppdatert av Helene Delbekk den 07.12.2020.
+Kontrollert sist av Mathias Blokkhus den 09.12.2020.
+*/

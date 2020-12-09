@@ -17,12 +17,14 @@ include ("start_3.php");
 <form id="login-form" name="login-form" method="post">
   Epost <input type="text" name="epost" type="text" id="epost" placeholder="Fyll inn epost"> <br />
   Passord <input type="password" name="passord" id="passord" placeholder="Fyll inn passord">  <br/>
-  Brukertype
-  <select class="brukertype" name="brukertype" placeholder="Velg brukertype">
-    <option value="1">Bruker</option>
-    <option value="2">Admin</option>
-    <option value="3">Kontrollor</option>
-  </select> <br><br>
+  Brukertype <br>
+  <div class="dropdown">
+    <select class="brukertype" name="brukertype" placeholder="Velg brukertype">
+      <option value="1">Bruker</option>
+      <option value="2">Admin</option>
+      <option value="3">Kontrollor</option>
+    </select> <br><br>
+  </div>
   <input type="submit" name="loginbutton" class="loginbutton" value="Logg inn">
   <input type="reset" name="nullstill" id="nullstill" value="Nullstill"> <br/>
 </form> <br>
@@ -69,5 +71,10 @@ Ny bruker? <br>
 </section>
 </article>
 </body>
+
+/*
+Denne siden er utviklet av Helene Delbekk, sist oppdatert av Helene Delbekk den 06.12.2020.
+Kontrollert sist av Harald Evensen den 06.12.2020.
+*/
 
 </html>
