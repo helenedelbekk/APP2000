@@ -67,9 +67,10 @@ include 'start.php';
     <script src="hamburger.js"></script>
     <script src="bildegalleri.js"></script>
 </body>
+<?php
 /*
 Denne siden er utviklet av Johs Hildebrand, sist oppdatert av Johs Hildebrand den 10.10.2020.
 Kontrollert sist av Mathias Blokkhus den 02.12.2020.
 */
-
+?>
 </html>

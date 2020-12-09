@@ -75,10 +75,10 @@ document.forms['registrerBrukerSkjema'].elements['epost'].focus();
 </section>
 </article>
 </body>
-
+<?php
 /*
 Denne siden er utviklet av Helene Delbekk, sist oppdatert av Helene Delbekk den 09.12.2020.
 Kontrollert sist av Mathias Blokkhus den 09.12.2020.
 */
-
+?>
 </html>

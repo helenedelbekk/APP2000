@@ -19,8 +19,10 @@ include ("start_2.php");
 
   <script src="hamburger.js"></script>
 </body>
+<?php
 /*
 Denne siden er utviklet av Helene Delbekk, sist oppdatert av Helene Delbekk den 06.12.2020.
 Kontrollert sist av Johs Hildebrand den 06.12.2020.
 */
+?>
 </html>
