@@ -6,8 +6,7 @@ include 'start.php';
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stilark.css">
     <title>Vestfold Gruppe 12|Nominering</title>
 </head>
@@ -68,5 +67,10 @@ include 'start.php';
     <script src="hamburger.js"></script>
     <script src="bildegalleri.js"></script>
 </body>
-
+<?php
+/*
+Denne siden er utviklet av Johs Hildebrand, sist oppdatert av Johs Hildebrand den 10.10.2020.
+Kontrollert sist av Mathias Blokkhus den 02.12.2020.
+*/
+?>
 </html>

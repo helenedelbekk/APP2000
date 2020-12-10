@@ -1,17 +1,30 @@
 <?php
-include("start_3.php");
+include ("start_3.php");
  ?>
+ <!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stilark.css">
+    <title>Vestfold Gruppe 12|Logg inn</title>
+</head>
+
+<body>
 <article class="login-page">
  <section class="form">
 <form id="login-form" name="login-form" method="post">
-  Epost <input type="text" name="epost" type="text" id="epost"> <br />
-  Passord <input type="password" name="passord" id="passord">  <br/>
-  Brukertype
-  <select class="brukertype" name="brukertype">
-    <option value="1">Bruker</option>
-    <option value="2">Admin</option>
-    <option value="3">Kontrollor</option>
-  </select> <br><br>
+  Epost <input type="text" name="epost" type="text" id="epost" placeholder="Fyll inn epost"> <br />
+  Passord <input type="password" name="passord" id="passord" placeholder="Fyll inn passord">  <br/>
+  Brukertype <br>
+  <div class="dropdown">
+    <select class="brukertype" name="brukertype" placeholder="Velg brukertype">
+      <option value="1">Bruker</option>
+      <option value="2">Admin</option>
+      <option value="3">Kontrollor</option>
+    </select> <br><br>
+  </div>
   <input type="submit" name="loginbutton" class="loginbutton" value="Logg inn">
   <input type="reset" name="nullstill" id="nullstill" value="Nullstill"> <br/>
 </form> <br>
@@ -57,3 +70,11 @@ Ny bruker? <br>
 
 </section>
 </article>
+</body>
+<?php
+/*
+Denne siden er utviklet av Helene Delbekk, sist oppdatert av Helene Delbekk den 06.12.2020.
+Kontrollert sist av Harald Evensen den 06.12.2020.
+*/
+?>
+</html>
