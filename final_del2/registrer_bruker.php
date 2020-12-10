@@ -22,8 +22,8 @@ include 'start_3.php';
   Brukertype
   <select class="brukertype" name="brukertype">
     <option value="1">Bruker</option>
-    <option value="2">Admin</option>
-    <option value="3">Kontrollor</option>
+    <option value="2" disabled>Admin</option>
+    <option value="3" disabled>Kontrollor</option>
   </select> <br><br>
 
   <input type="submit" name="registrerBrukerKnapp" value="Registrer bruker">
