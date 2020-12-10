@@ -60,7 +60,7 @@ document.forms['registrerBrukerSkjema'].elements['epost'].focus();
             }
           else
             {
-              $sqlSetning="INSERT INTO bruker VALUES('$epost','$passord', '$brukertype');";
+              $sqlSetning="INSERT INTO bruker VALUES('$epost','$passord',null,null,'$brukertype',null,null,null,null,null);";
               mysqli_query($conn,$sqlSetning) or die ("ikke mulig &aring; registrere data i databasen");
 
               print ("F&oslash;lgende data er n&aring; registrert: <br /> ");

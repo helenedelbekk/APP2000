@@ -1,4 +1,7 @@
-<?php  /* sjekk */
+<?php  
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+/* sjekk */
 /*
 /*  Programmet inneholder en funksjon for å sjekke om epost, passord og brukertype er korrekt
 */
@@ -22,6 +25,9 @@ function sjekkEpostPassordBrukertype($epost,$passord,$brukertype)
 
   $sqlSetning="SELECT * FROM bruker WHERE epost='$epost';";
   $sqlResultat=mysqli_query($conn,$sqlSetning);  /* SQL-setning sendt til database-serveren */
+  
+
+  //print($epost." ".$passord." ".$brukertype);
 
   if (!$sqlResultat)  /* eposten er ikke registrert i databasen eller SQL-setningen var ikke vellykket (tilsvarer or die)  */
     {
